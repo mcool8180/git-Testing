@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "1044cffb-8ae6-442c-a9b0-ed5e79e616a3",
+		"name": "Country_Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/all",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"all"
+					]
+				},
+				"description": "Here we get the details of all the countries"
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/name/{{CountryName}}",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"{{CountryName}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by partial name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/alpha/co\n",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"alpha",
+						"co\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by full name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/name/aruba?fullText=true",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"name",
+						"aruba"
+					],
+					"query": [
+						{
+							"key": "fullText",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Countries by 2 letter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/alpha/co\n",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"alpha",
+						"co\n"
+					]
+				},
+				"description": "Get country by code"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country by alpha code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/alpha/col\n",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"alpha",
+						"col\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries  by multiple alpha codes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/alpha?codes=col;no;ee",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"alpha"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "col;no;ee"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by currency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/currency/cop",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"currency",
+						"cop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by language",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/lang/es",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"lang",
+						"es"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by its capital.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/capital/tallinn\n",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"capital",
+						"tallinn\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by calling code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/callingcode/372\n",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"callingcode",
+						"372\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by its region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/region/europe\n",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"region",
+						"europe\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by initial regional bloc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseURI}}/regionalbloc/eu\n",
+					"host": [
+						"{{BaseURI}}"
+					],
+					"path": [
+						"regionalbloc",
+						"eu\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get countries by filtering the response",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.eu/rest/v2/all?fields=name;capital;currencies\n",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"eu"
+					],
+					"path": [
+						"rest",
+						"v2",
+						"all"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "name;capital;currencies\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
